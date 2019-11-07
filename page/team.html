@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IEI ADIT IT-CP &bull; Team</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../Icon/logo.ico"/>
+  <link rel="stylesheet" type="text/css" href="../CSS/team.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/header.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+  <link rel="stylesheet" type="text/css" href="../Fonts/style.css">
+</head>
+<body>
+  <div class="sticky" id="header">
+    <div id="logo" onclick="location.href='../';"></div>
+    <div id="sections">
+      <div class="headerBox about">
+        <h1>About Us</h1>
+      </div>
+      <div class="headerBox team" onclick="location.href='../page/team.html';">
+        <h1>Team</h1>
+      </div>
+      <div class="headerBox activites">
+        <h1>Activites</h1>
+      </div>
+      <div class="headerBox">
+        <h1>Membership</h1>
+      </div>
+      <div class="headerBox" onclick="location.href='../';">
+        <h1>Home</h1>
+      </div>
+    </div>
+  </div>
+  <div class="members">
+    <div class="searchBar">
+      <div class="search">
+        <input type="text" class="searchTerm" placeholder="Search...">
+        <button type="submit" class="searchButton">
+        <i class="fa fa-search">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" style="transform: scale(0.9);">
+            <style type="text/css">
+            	.st0{fill:#EFEFEF;}
+            </style>
+            <g>
+              <path class="st0" d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"/>
+            </g>
+          </svg>
+        </i>
+      </div>
+    </div>
+    <div class="container">
+      <svg version="1.1" id="testLeft" onclick="shiftLeft()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="6%" height="10%" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847; transform: scaleX(-1); cursor: pointer;">
+        <g>
+          <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+            L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+            c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/>
+        </g></svg>
+      <div id="box">
+        <ul class="cards__container">
+            <li class="box">box 1</li>
+            <li class="box">box 2</li>
+            <li class="box">box 3</li>
+            <li class="box">box 4</li>
+            <li class="box">box 5</li>
+            <li class="box box--hide">box 6</li>
+            <li class="box box--hide">box 7</li>
+        </ul>
+      </div>
+      <svg version="1.1" id="testRight" onclick="shiftRight()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="6%" height="10%" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847; cursor: pointer;">
+        <g>
+          <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+            L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+            c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/>
+        </g></svg>
+    </div>
+  </div>
+  <div id="footer"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="../JS/team.js"></script>
+</body>
