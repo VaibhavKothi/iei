@@ -30,7 +30,7 @@ body{
   border-right: none;
   padding: 5px;
   height: 20px;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5vw 0 0 5vw;
   outline: none;
   color: #1d1d1d;
 }
@@ -46,7 +46,7 @@ body{
   background: #1d1d1d;
   text-align: center;
   color: #fff;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 5vw 5vw 0;
   cursor: pointer;
   font-size: 20px;
 }
@@ -76,46 +76,79 @@ body{
     height: 25rem;
 }
 
-.box {
+.card {
     width: 20rem;
     height: 28rem;
     box-shadow: 0px 0px .5rem .5rem rgba(29, 29, 29, 0.1);
     background-color: #efefef;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     border-radius: 2.5vw;
+    cursor: pointer;
 }
-
-.box:nth-child(2n) {
+.image{
+  margin: 1vw;
+  border-style: solid;
+  border-width: medium;
+  border-color: #1d1d1d;
+  border-radius: 50vh;
+  box-shadow: .5vh .5vw 2rem 0rem rgba(29, 29, 29, 0.3);
+  width: 30vh;
+  height: 30vh;
+  align-self: center;
+  background: url("https://scontent-sin2-2.cdninstagram.com/vp/cdfed87f766e25e597ace02ef55b630b/5E54BE1D/t51.2885-19/s150x150/64248610_736494563446608_6078236652147310592_n.jpg?_nc_ht=scontent-sin2-2.cdninstagram.com");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.card h1{
+  margin-top: 5vh;
+  font-family: Product Sans Regular;
+  color: #000;
+  font-size: 3vw;
+  text-align: center;
+}
+.card p{
+  margin-top: -4vh;
+  font-family: Bahnschrift Regular;
+  color: #1d1d1d;
+  opacity: .9;
+  font-size: 2.5vw;
+  align-self: center;
+}
+.card:nth-child(2n) {
     transform: scale(0.85);
+    opacity: .9;
     z-index: -1;
 }
 
-.box:nth-child(2) {
+.card:nth-child(2) {
   left: 5%;
 }
 
-.box:nth-child(4) {
+.card:nth-child(4) {
   left: -5%;
 }
 
-.box:nth-child(4n + 1) {
+.card:nth-child(4n + 1) {
     transform: scale(0.75);
+    opacity: .4;
     z-index: -2;
 }
 
-.box:nth-child(1) {
+.card:nth-child(1) {
   left: 15%;
 }
 
-.box:nth-child(5) {
+.card:nth-child(5) {
   left: -15%;
 }
 
 
-.box--hide {
+.card--hide {
     display: none;
 }
 
